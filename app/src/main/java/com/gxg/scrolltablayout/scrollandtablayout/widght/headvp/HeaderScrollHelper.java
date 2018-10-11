@@ -12,6 +12,7 @@ import android.widget.AdapterView;
 import android.widget.ScrollView;
 
 import com.gxg.scrolltablayout.scrollandtablayout.util.ScreenSizeUtil;
+import com.socks.library.KLog;
 
 
 /**

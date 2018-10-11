@@ -8,6 +8,7 @@ import android.widget.TextView;
 
 import com.gxg.scrolltablayout.scrollandtablayout.activity.DeliciousFoodDetailActivity;
 import com.gxg.scrolltablayout.scrollandtablayout.activity.HeadScrollActivity;
+import com.gxg.scrolltablayout.scrollandtablayout.activity.ScrollViewTopActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -40,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.tv_rv_tab:
                 break;
             case R.id.tv_sv_tab:
+                startActivity(new Intent(MainActivity.this, ScrollViewTopActivity.class));
                 break;
             case R.id.tv_vp_tab:
                 startActivity(new Intent(MainActivity.this, HeadScrollActivity.class));

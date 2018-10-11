@@ -21,6 +21,7 @@
     <color name="textColor">#555555</color>
     <color name="transparent">#00000000</color>
     <color name="orange">#FF7200</color>
+    <color name="tv_price_color">#DB4453</color>
     <color name="color_part2">#f6c854</color>
     <color name="color_part4">#b03118</color>
 </resources>

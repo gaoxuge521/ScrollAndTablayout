@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_marginLeft="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/iv_left"
+        android:scaleType="centerCrop"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/yidian_1167278026"/>
+
+    <TextView
+        app:layout_constraintRight_toLeftOf="@+id/tv_price"
+        android:id="@+id/tv_hotel_name"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        app:layout_constraintLeft_toRightOf="@+id/iv_left"
+        app:layout_constraintTop_toTopOf="@+id/iv_left"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="平遥万泰酒店"
+        android:layout_marginStart="10dp" />
+
+
+
+    <LinearLayout
+        app:layout_constraintLeft_toRightOf="@+id/iv_left"
+        app:layout_constraintTop_toBottomOf="@+id/tv_hotel_name"
+        app:layout_constraintBottom_toTopOf="@+id/tv_new_reserve_time"
+        app:layout_constraintRight_toLeftOf="@+id/tv_price"
+        android:orientation="vertical"
+       android:layout_marginLeft="10dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:layout_width="0dp"
+        android:gravity="center_vertical"
+        android:layout_height="0dp">
+        <TextView
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:id="@+id/tv_hotel_type"
+            android:textColor="@color/textColor"
+            android:textSize="12sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4.8评分 非常好 服务周到"
+             />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:id="@+id/tv_address"
+            android:gravity="center_vertical"
+            android:textColor="@color/textColor"
+            android:textSize="12sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="西单/金融街地区"
+            />
+        <TextView
+            android:visibility="gone"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:id="@+id/tv_tip"
+            android:textColor="@color/textColor"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="信用住"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:id="@+id/tv_new_reserve_time"
+        app:layout_constraintRight_toLeftOf="@+id/tv_price"
+        android:textColor="@color/yellow_top"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toRightOf="@+id/iv_left"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_left"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="提前1天预定"
+        android:layout_marginStart="10dp" />
+
+    <TextView
+        android:visibility="gone"
+        android:layout_marginRight="10dp"
+        android:id="@+id/tv_price"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_left"
+        android:textSize="14sp"
+        android:textColor="@color/tv_price_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¥1543起"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>

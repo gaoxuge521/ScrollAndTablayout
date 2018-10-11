@@ -45,9 +45,7 @@ public class Head1Fragment extends HeaderViewPagerFragment {
     @Override
     public void setUserVisibleHint(boolean isVisibleToUser) {
         super.setUserVisibleHint(isVisibleToUser);
-        if(isVisibleToUser){
-            KLog.e("sss", "setUserVisibleHint: "+getActivity()+getArguments().getString("name"));
-        }
+
 
     }
 
@@ -103,7 +101,6 @@ public class Head1Fragment extends HeaderViewPagerFragment {
 
         }
 
-        Log.e("sss", "initData: "+mName );
 
         for(int i = 0;i<20;i++){
             HeadBean headBean = new HeadBean();
